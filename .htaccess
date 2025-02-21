@@ -1,0 +1,39 @@
+RewriteEngine On
+RewriteBase /FIS_Intern/TrendWear/
+
+RewriteRule ^login$ frontend/model/loginPage.php [L]
+RewriteRule ^register$ frontend/model/registerPage.php [L]
+RewriteRule ^cart$ frontend/model/cartPage.php [L]
+RewriteRule ^kids$ frontend/model/kidsClothingList.php [L]
+RewriteRule ^men$ frontend/model/menClothingList.php [L]
+RewriteRule ^women$ frontend/model/womenClothingList.php [L]
+RewriteRule ^getOrderDetails.php$ frontend/model/orderDetails.php [L]
+RewriteRule ^manageOrders$ frontend/model/manageOrders.php [L]
+RewriteRule ^manageProducts$ frontend/model/manageProducts.php [L]
+RewriteRule ^searchResults.php$ frontend/model/searchResults.php [L]
+
+
+RewriteRule ^ctlLogin.php$ backend/login.php [L]
+RewriteRule ^ctlAddCartItem.php$ backend/AddToCart.php [L]
+RewriteRule ^ctlDltCartItem.php$ backend/deleteCartItem.php [L]
+RewriteRule ^ctlDltOrder.php$ backend/deleteOrder.php [L]
+RewriteRule ^ctlDltProduct.php$ backend/deleteProduct.php [L]
+RewriteRule ^ctlAddProduct.php$ backend/addProduct.php [L]
+RewriteRule ^ctlGetProductDetails.php$ backend/getProductDetails.php [L]
+RewriteRule ^ctlLogout.php$ backend/logout.php [L]
+RewriteRule ^ctlLogin.php$ backend/login.php [L]
+RewriteRule ^ctlPlaceOrder.php$ backend/placeOrder.php [L]
+
+
+
+RewriteRule ^ctlRegister.php$ backend/register.php [L]
+RewriteRule ^ctlUpdateCart.php$ backend/updateCart.php [L]
+RewriteRule ^ctlUpdateProduct.php$ backend/updateProduct.php [L]
+
+
+
+RewriteRule ^header.php$ frontend/layout/header.php [L]
+RewriteRule ^$ frontend/model/index.php [L]
+
+RewriteRule ^styleFrm.css$ frontend/style/styleFrm.css [L]
+RewriteRule ^style.css$ frontend/style/style.css [L]

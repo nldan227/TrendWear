@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>TrendWear</title>
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Oi&display=swap');
+
+    * {
+        padding: 0;
+        margin: 0;
+        font-family: 'Rokkit'
+    }
+
+    html, body{
+        height: 100%;
+        width: 100%;
+    }
+
+    .main {
+        height: 100%;
+        width: 100%; 
+        display: flex;
+    }
+
+    .left {
+        height: 200%;
+        width: 14%;
+        background-color: #254880;
+        color: white;
+        padding: 10px;
+    }
+    .right {
+        width: 86%; 
+        height: 100%;
+    }
+    .left h2 {
+        font-size: 20px;
+        margin: 20px 0px;
+        text-align: center;
+    }
+
+    .left ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    .left ul li {
+        margin: 10px 0;
+    }
+
+    .left ul li a {
+        text-decoration: none;
+        color: white;
+        font-size: 16px;
+        padding: 8px;
+        display: block;
+        transition: background 0.3s;
+    }
+
+    .left ul li a:hover {
+        background-color: #0057ae; /* Hiệu ứng hover */
+    }
+
+    .btnLogout {
+        width: 100%;
+        height: 7%;
+        background-color: rgb(208, 210, 216);
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="left">
+            <p style="font-family: 'Oi', serif; font-weight: 400; font-size: 20px; font-style: normal; margin-top: 10%">TrendWear</p>
+            <ul>
+                <li><a href="manageOrders">📦 Theo dõi đơn hàng</a></li>
+                <li><a href="manageProducts">📋 Quản lý sản phẩm</a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <div class="btnLogout">
+                <a href="ctlLogout.php" style="text-decoration: none; color: black; margin-right: 20px; font-weight: bold;">Đăng xuất</a>
+            </div>
+       
